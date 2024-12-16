@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <th colspan="8" class="first_line">Калькулятор</th>
+            <th class="first_line"><input type="button" value="_" class="bc color"></th>
+            <th class="first_line"><input type="button" value="□" class="bc color1"></th>
+            <th class="first_line"><input type="button" value="x" class="bc color"></th>
+        </tr>
+        <tr><td><input type="button" value="Правка"></td>
+            <td><input type="button" value="Вид"></td>
+            <td><input type="button" value="Справка"></td>
+            <td colspan="9"></td>
+        </tr>
+        <tr><td colspan="5"></td>
+            <td colspan="6"><input type="text" class="width" value="0."></td>
+        </tr>
+        <tr><td colspan="6">
+            <input type="radio" id="Hex" name="1" value="Hex" />
+            <label for="Hex">Hex</label>
+            <input type="radio" id="Dec" name="1" value="Dec" />
+            <label for="Dec">Dec</label>
+            <input type="radio" id="Oct" name="1" value="Oct" />
+            <label for="Oct">Oct</label>
+            <input type="radio" id="Bin" name="1" value="Bin" />
+            <label for="Bin">Bin</label></td>
+            <td colspan="5">
+                <input type="radio" id="Degrees" name="2" value="Degrees" />
+                <label for="Degrees">Degrees</label>
+                <input type="radio" id="Radians" name="2" value="Radians" />
+                <label for="Radians">Radians</label>
+                <input type="radio" id="Gradients" name="2" value="Gradients" />
+                <label for="Gradients">Gradients</label>
+                </td>
+        </tr>
+        <tr><td colspan="2"><label>
+            <input type="checkbox" name="3" value="Inv" />
+            Inv
+        </label>
+        <label>
+            <input type="checkbox" name="3" value="Hyp" />
+            Hyp
+        </label></td>
+            <td><input type="button" style="width: 40%;"></td>
+            <td><input type="button" style="width: 70%;"></td>
+            <td></td>
+            <td colspan="2"><input type="reset" value="Backspace" class="button1 size"></td>
+            <td colspan="2"><input type="reset" value="CE" class="button1 size"></td>
+            <td colspan="2"><input type="reset" value="C" class="button1 size"></td>
+            
+            
+        
+        </tr>
+        <tr><td><input type="button" value="Sta" class="button2 size"></td>
+            <td><input type="button" value="F-E" class="button3 size"></td>
+            <td><input type="button" value="(" class="button3 size"></td>
+            <td><input type="button" value=")" class="button3 size"></td>
+            <td><input type="button" value="MC" class="button1 size"></td>
+            <td><input type="button" value="7" class="button2 size"></td>
+            <td><input type="button" value="8" class="button2 size"></td>
+            <td><input type="button" value="9" class="button2 size"></td>
+            <td><input type="button" value="/" class="button1 size"></td>
+            <td><input type="button" value="Mod" class="button1 size"></td>
+            <td><input type="button" value="And" class="button1 size"></td>
+            
+        </tr>
+        <tr><td><input type="button" value="Ave" class="button4 size"></td>
+            <td><input type="button" value="dms" class="button3 size"></td>
+            <td><input type="button" value="Exp" class="button3 size"></td>
+            <td><input type="button" value="In" class="button3 size"></td>
+            <td><input type="button" value="MR" class="button1 size"></td>
+            <td><input type="button" value="4" class="button2 size" ></td>
+            <td><input type="button" value="5" class="button2 size"></td>
+            <td><input type="button" value="6" class="button2 size"></td>
+            <td><input type="button" value="*" class="button1 size"></td>
+            <td><input type="button" value="Or" class="button1 size"></td>
+            <td><input type="button" value="Xor" class="button1 size"></td>
+        </tr>
+        <tr><td><input type="button" value="Sum" class="button4 size"></td>
+            <td><input type="button" value="sin" class="button3 size"></td>
+            <td><input type="button" value="x^y" class="button3 size"></td>
+            <td><input type="button" value="log" class="button3 size"></td>
+            <td><input type="button" value="MS" class="button1 size"></td>
+            <td><input type="button" value="1" class="button2 size"></td>
+            <td><input type="button" value="2" class="button2 size"></td>
+            <td><input type="button" value="3" class="button2 size"></td>
+            <td><input type="button" value="-" class="button1 size"></td>
+            <td><input type="button" value="Lsh" class="button1 size"></td>
+            <td><input type="button" value="Not" class="button1 size"></td>
+            
+        </tr>
+        <tr><td><input type="button" value="$" class="button4 size"></td>
+            <td><input type="button" value="cos" class="button3 size"></td>
+            <td><input type="button" value="x^3" class="button3 size"></td>
+            <td><input type="button" value="nl" class="button3 size"></td>
+            <td><input type="button" value="M+" class="button1 size"></td>
+            <td><input type="button" value="0" class="button2 size"></td>
+            <td><input type="button" value="+/-" class="button2 size"></td>
+            <td><input type="button" value="," class="button2 size"></td>
+            <td><input type="button" value="+" class="button1 size"></td>
+            <td><input type="button" value="=" class="button1 size"></td>
+            <td><input type="button" value="Int" class="button1 size"></td>
+            
+        </tr>
+        <tr><td><input type="button" value="Dat" class="button4 size"></td>
+            <td><input type="button" value="tan" class="button3 size"></td>
+            <td><input type="button" value="x^2" class="button3 size"></td>
+            <td><input type="button" value="1/x" class="button3 size"></td>
+            <td><input type="button" value="pi" class="button2 size"></td>
+            <td><input type="button" value="A" class="button4 size"></td>
+            <td><input type="button" value="B" class="button4 size"></td>
+            <td><input type="button" value="C" class="button4 size"></td>
+            <td><input type="button" value="D" class="button4 size"></td>
+            <td><input type="button" value="E" class="button4 size"></td>
+            <td><input type="button" value="F" class="button4 size"></td>
+            
+           
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
+
