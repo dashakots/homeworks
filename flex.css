@@ -1,0 +1,30 @@
+.content {
+	display: flex;
+	height: 300px;
+	gap: 5px;
+}
+
+.header {
+	height: 100px;
+	background-color: goldenrod;
+	margin-bottom: 5px;
+}
+.footer {
+	height: 100px;
+	background-color: goldenrod ;
+	margin-top: 5px;
+}
+
+.article {
+	width: 50%;
+	background-color: goldenrod ;
+}
+
+.nav {
+	width: 25%;
+	background-color: goldenrod ;
+}
+.ads {
+	width: 25%;
+	background-color: goldenrod ;
+}
