@@ -1,0 +1,28 @@
+.first_line {
+  background-color: midnightblue;
+  color: aliceblue; }
+
+.button1 {
+  color: red; }
+
+.button2 {
+  color: blue; }
+
+.button3 {
+  color: fuchsia; }
+
+.button4 {
+  color: gray; }
+
+.color {
+  color: aliceblue; }
+
+.color1 {
+  color: gray; }
+
+.size {
+  width: 99%; }
+
+.width {
+  width: 97%;
+  text-align: right; }

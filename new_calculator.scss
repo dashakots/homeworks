@@ -1,0 +1,37 @@
+$redColor: red;
+$blueColor: blue;
+$purpleColor: fuchsia;
+$grayColor: gray;
+$background: midnightblue;
+$whiteColor: aliceblue;
+
+
+.first_line {
+    background-color: $background;
+    color: $whiteColor;
+}
+.button1 {
+    color: $redColor;
+}
+.button2 {
+    color: $blueColor;
+}
+.button3 {
+    color:$purpleColor;
+}
+.button4 {
+    color: $grayColor;
+}
+.color {
+    color:$whiteColor;
+}
+.color1 {
+    color: $grayColor;
+}
+.size {
+    width: 99%;
+}
+.width {
+    width: 97%;
+    text-align: right;
+}
