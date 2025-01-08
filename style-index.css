@@ -1,0 +1,156 @@
+.page {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100%;
+    min-width: 100%; 
+}
+
+.footer {
+  
+    background-color:#4C382C;
+    color: #E5E5E4;
+   padding-left: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    background-color:#4C382C;
+    
+    
+  }
+  .view {
+    background-color:#4C382C !important;
+    border: 1px solid #876E54 !important;
+    width: 150px;
+    color: #876E54 !important;
+    font-size: 20px !important;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+  }
+  .left {
+    display: flex;
+    
+    
+  }
+  .photo1 {
+    width: 45%;
+    height: 450px;
+    
+    
+  }
+  .photo2 {
+    width: 25%;
+  }
+  .photo3 {
+    width: 25%;
+    height: 520px;
+  
+  }
+  .photo4 {
+    height: 600px;
+    width: 750px;
+    padding: 20px 0px;
+  }
+  .text {
+    padding-top: 150px;
+   padding-left: 50px;
+    color: #876E54;
+  }
+  .icon {
+    width:50px;
+    height:50px;
+  }
+
+  @media (max-width: 1000px){
+    
+    .photo1, .photo2 {
+      height: 300px;
+      width: 350px;
+    }
+    .photo3 {
+      display: none;
+    }
+    .photo4 {
+      height: 300px;
+      width: 350px;
+    }
+    .text {
+      padding-top: 0px;
+      color: black;
+  }
+ .header {
+    background-color: #525e5e;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #525e5e;
+  }
+  .view {
+    background-color:#525e5e !important;
+    border: 1px solid #d7d7cb !important;
+    width: 100px;
+    color: #d7d7cb !important;
+    font-size: 15px !important;
+  }
+  .text2 {
+    padding-top: 100px;
+  }
+  }
+
+
+  @media (max-width: 699px){
+    
+     .photo2 {
+      height: 250px;
+      width: 300px;
+    }
+    .photo3, .photo1 {
+      display: none;
+    }
+    .photo4 {
+      height: 250px;
+      width: 250px;
+    }
+    .text {
+      padding-top: 0px;
+      color: #847c65;
+      font-size: 16px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #525e5e;
+  }
+  .view {
+    background-color:#525e5e !important;
+    border: 1px solid #d7d7cb !important;
+    width: 100px;
+    color: #d7d7cb !important;
+    font-size: 15px !important;
+  }
+    .text2 {
+      font-size: 16px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #5f5846;
+    }
+    .header {
+      justify-content: center;
+      background-color: #525e5e;
+  }
+  .text2 {
+    padding-top: 100px;
+  }
+  }
+
+
+

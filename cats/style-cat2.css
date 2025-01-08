@@ -1,0 +1,99 @@
+.page {
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.footer {
+    
+    background-color:#4C382C;
+    color: #E5E5E4;
+   padding-left: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    background-color:#4C382C;
+    
+    
+  }
+  .view {
+    background-color:#4C382C !important;
+    border: 1px solid #876E54 !important;
+    width: 150px;
+    color: #876E54 !important;
+    font-size: 20px !important;
+  }
+
+  
+  .icon {
+    width:50px;
+    height:50px;
+    
+  }
+  .content {
+    padding-top: 20px;
+  }
+
+  .photo {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    
+  }
+ 
+  .content1 {
+    display: flex;
+    
+    
+  }
+  .content2  {
+    display: flex;
+    
+  }
+  .text {
+    padding: 50px 20px;
+    
+  }
+  /* .myTable {
+    width: 1000px
+  } */
+  
+
+  @media (max-width: 1020px){
+    .text {
+      padding-top: 0px;
+      color: black;
+  }
+  
+  .footer, .header {
+    background-color: #e4dedf;
+    color: black;
+  }
+  .view {
+    background-color:#e4dedf !important;
+    border: 1px solid #798486 !important;
+    width: 100px;
+    color: black !important;
+    font-size: 15px !important;
+  }
+  .card3 {
+    display: none;
+  }
+  .text {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .photo {
+   display: none;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  }
+
+
+  
