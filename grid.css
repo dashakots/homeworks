@@ -1,0 +1,38 @@
+.wrapper {
+    display: grid;
+    background-color: beige;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 350px 50px;
+    grid-template-areas: 
+    "h h h h h"
+    "ar ar ar n ad"
+    "f f f f f ";
+    
+}
+
+.wrapper > div {
+    background-color:goldenrod ;
+    
+}
+.header {
+    grid-area: h;
+    align-content: center;
+}
+.article {
+    grid-area: ar;
+    align-content: start;
+}
+.nav {
+    grid-area: n;
+    align-content: start;
+}
+.ads {
+    grid-area: ad;
+    align-content: start;
+}
+.footer {
+    grid-area: f;
+    align-content: center;
+
+}
