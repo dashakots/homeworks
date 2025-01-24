@@ -35,7 +35,24 @@ if (year % 4 == 0 && (year % 100 !== 0 || year % 400 == 0)) {
 
 // Задача 4
 
+const array0 = [5, 2, 45, 5, 9, 2, 1, 1, 10, 9, 2];
+const new_obj = {};
 
+for (let i = 0; i < array0.length; i++) {
+
+    let el = array0[i];
+        new_obj[el] = 0;
+    
+
+    for (let j = 0; j < array0.length; j++) {
+
+        if (array0[i] === el) {
+            new_obj[el] += 1;
+        }
+    }
+}
+
+console.log(new_obj);
 
 // Задача 5
 
@@ -63,7 +80,7 @@ const obj = [
 let newObj = [];
 
 for (let i = 0; i < obj.length; i++) {
-    if (obj[i].age > 30); {
+    if (obj[i].age > 30) {
     newObj.push(obj[i]);
 }
 }
