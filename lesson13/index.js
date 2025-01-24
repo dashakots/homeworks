@@ -35,6 +35,17 @@ if (year % 4 == 0 && (year % 100 !== 0 || year % 400 == 0)) {
 
 // Задача 4
 
+let arr4 = [5, 2, 45, 5, 9, 2, 1, 1, 10, 9, 2];
+let count = {};
+
+for (let elem of arr4) {
+    if (count[elem] === undefined) {
+    count[elem] = 1;
+    } else {
+    count[elem]++;
+    }
+}
+console.log(count);
 
 
 // Задача 5
@@ -63,7 +74,7 @@ const obj = [
 let newObj = [];
 
 for (let i = 0; i < obj.length; i++) {
-    if (obj[i].age > 30); {
+    if (obj[i].age > 30) {
     newObj.push(obj[i]);
 }
 }
