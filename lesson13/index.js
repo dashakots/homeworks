@@ -35,24 +35,18 @@ if (year % 4 == 0 && (year % 100 !== 0 || year % 400 == 0)) {
 
 // Задача 4
 
-const array0 = [5, 2, 45, 5, 9, 2, 1, 1, 10, 9, 2];
-const new_obj = {};
 
-for (let i = 0; i < array0.length; i++) {
+let arr4 = [5, 2, 45, 5, 9, 2, 1, 1, 10, 9, 2];
+let count = {};
 
-    let el = array0[i];
-        new_obj[el] = 0;
-    
-
-    for (let j = 0; j < array0.length; j++) {
-
-        if (array0[i] === el) {
-            new_obj[el] += 1;
-        }
+for (let elem of arr4) {
+    if (count[elem] === undefined) {
+    count[elem] = 1;
+    } else {
+    count[elem]++;
     }
 }
-
-console.log(new_obj);
+console.log(count);
 
 // Задача 5
 
