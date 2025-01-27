@@ -26,7 +26,7 @@ console.log(isPalindrome("А роза упала на лапу Азора"));
 console.log(isPalindrome("стол"));
 
 
-// Задача 3 
+// Задача 3 (пока не доделала)
 
 function uniqueValues(arr) {
     const arr2 = [];
@@ -54,25 +54,30 @@ console.log(sumRange(5,10));
 console.log(sumRange(1,4));
 
 
-// Задача 5 (см задачу 3)
+// Задача 5 
 
 // Задача 6 
 
 function arrL(n) {
     const Array = [];
-    // let sum = 0;
-    // let mult = 1;
-    // let maxElement = Array[0];
-    // let minElement = Array[0];
+    let sum = 0; 
     for (let i = 0; i <= n; i++) {
     let randomNum = Math.floor(Math.random() * 101)
     Array.push(randomNum);
-    // sum += Array[i];
-    // mult = sum / n; 
-    
-    }
-    return Array
+    sum += randomNum;
 }
+    console.log(Array);
+
+    let maxElement = Math.max(...Array);
+    let minElement = Math.min(...Array);
+       
+    let Aver = sum / Array.length ;
+
+    console.log(`минимальное значение - ${minElement}, максимальное значение - ${maxElement}, сумма всех элементов - ${sum}, 
+        среднее арифметическое - ${Aver}`);
+    return Array;
+}
+
 
 console.log(arrL(5));
 
@@ -80,16 +85,14 @@ console.log(arrL(5));
 // Задача 7 
 
 function arrLen(n) {
-    const Arr5 = [];
-    Arr5[0] = 1;
-    Arr5[1] = 1;
-    for (let i = 2; i <= n; i++) {
+    const Arr5 = [0, 1];
+    for (let i = 2; i < n; i++) {
     Arr5[i] = Arr5[i-1] + Arr5[i-2]
-    Arr5.push(Arr5[i]);
+    
     }
-    return Arr5
+    return Arr5.slice(0,n);
 }
-console.log(arrLen(8));
+console.log(arrLen(15));
 
 
 
