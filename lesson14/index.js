@@ -25,19 +25,22 @@ console.log(isPalindrome("Анна"));
 console.log(isPalindrome("А роза упала на лапу Азора"));
 console.log(isPalindrome("стол"));
 
-
-// Задача 3 (пока не доделала)
+// Задача 3 
 
 function uniqueValues(arr) {
-    const arr2 = [];
-    for (let i = 0; i < arr.length; i++) {
-    if (!arr2.includes(arr[i])){
-    arr2.push(arr[i]);
+    let count = {};
+    let UniqArr = [];
+    
+    for (let elem of arr) {
+        if (count[elem] === undefined) {
+        count[elem] = 1;
+        } else {
+        count[elem]++;
+        }
+        UniqArr = Object.keys(count).filter(key => count[key] === 1); 
     }
+     return UniqArr
 }
-return arr2
-}
-
 console.log(uniqueValues([5, 2, 45, 5, 9, 2, 1, 1, 10, 9, 2]));
 
 // Задача 4 
