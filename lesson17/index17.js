@@ -14,7 +14,7 @@ products.forEach(product => {
     const img = document.createElement('image');
     img.classList.add('image');
     const h5 = document.createElement('h5');
-    h5.createElement('title');
+    h5.classList.add('title');
     h5.innerText = product.title;
     const p1 = document.createElement('p'); 
     p1.createElement('category');
