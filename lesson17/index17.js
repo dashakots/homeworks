@@ -17,21 +17,22 @@ products.forEach(product => {
     h5.classList.add('title');
     h5.innerText = product.title;
     const p1 = document.createElement('p'); 
-    p1.createElement('category');
+    p1.classList.add('category');
     p1.innerText = product.category;  
     const p2 = document.createElement('p');
-    p2.createElement('description');
+    p2.classList.add('description');
     p2.innerText = product.description;
     const p3 = document.createElement('p');
-    p3.createElement('price');
+    p3.classList.add('price');
     p3.innerText = `$${product.rating.count}`;
     const a = document.createElement('a');
-    a.createElement('toSee');
+    a.classList.add('toSee');
     a.innerText = 'See More';
 
-    btn.onclick = () => {
+    a.onclick = () => {
         console.log(console.log(product.id, product.title));
         };
+    
         divCard.append(img, h5, p1, p2, p3, a);
         divCards.appendChild(divCard);
 
