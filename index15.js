@@ -50,7 +50,7 @@ console.log(sumBetween([1, 2,0, 3, 4, 5, 6, 7, 8,0,15,36,25,14,25,36,]));
 
 function newArr (arr) {
     let k = 5;
-    for (let i = 0; i <= k; i++) {
+    for (let i = 0; i < k; i++) {
        arr.unshift(Math.round( Math.random() * 100));
     }
     return arr;
