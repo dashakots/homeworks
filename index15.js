@@ -1,7 +1,6 @@
 
 // Задача 1 
-
-const arr = [45,2,6,8,9,15,-8,-14,51,18, 30, -5];
+function arrMix(arr) {
 
 const resultAverage1 = arr.filter((el) => el % 2 === 0).reduce((sum, el) => sum + el) / arr.filter((el) => el % 2 === 0).length
 console.log(`Среднее арифметическое четных элементов = ${resultAverage1}`);
@@ -11,7 +10,9 @@ console.log(`Сумма элементов кратных трем = ${resultAve
 
 const arr2 = arr.filter((el) => el > 0)
 console.log(`Новый массив без отрицательных чисел : ${arr2}`);
+}
 
+arrMix([45,2,6,8,9,15,-8,-14,51,18, 30, -5]);
 
 
 
@@ -61,20 +62,22 @@ console.log(newArr([1, 2, 3, 4, 5, 6, 7, 8]));
 
 // Задача 5 
 
-function maxCount(arr) {
-    let maxCount = 0;
+function maxCountEl(arr) {
+    let maxCount = 1;
     let currentCount = 1;
+    let maxElement = arr[0];
 
-    for (let i = 1; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] === arr[i - 1]) {
             currentCount++;
         } else {
             if (currentCount > maxCount) {
                 maxCount = currentCount;
+                maxElement = arr[i-1];
             }
             currentCount = 1;
         }
     }
-    return maxCount
+    return { element: maxElement, count: maxCount };
 }
-    console.log(maxCount([1, 2, 3, 4,4,4,4,4,4,4,4,4, 5, 6, 7, 8,8,9]));
+    console.log(maxCountEl([1, 2, 3, 4,4,4,4,4,4,4,4,4, 5, 6, 7, 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9]));
