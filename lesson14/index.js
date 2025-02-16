@@ -57,7 +57,7 @@ console.log(sumRange(5,10));
 console.log(sumRange(1,4));
 
 
-// Задача 5 
+// Задача 5 см задачу 3
 
 // Задача 6 
 
